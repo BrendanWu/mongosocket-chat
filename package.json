@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/BrendanWu/mongosocket-chat#readme",
   "dependencies": {
-    "mongodb": "^3.0.10",
+    "mongodb": "^2.2.30",
     "nodemon": "^1.17.5",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.0.3"
   }
 }
