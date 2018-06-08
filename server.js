@@ -1,5 +1,14 @@
 const mongo = require('mongodb').MongoClient;
 const client = require('socket.io').listen(4000).sockets;
+var express = require("express");
+var app = express();
+var path = require("path");
+
+app.get("/", function(req,res) {
+   res.sendFile(path.join(__dirname + "/index.html")); 
+});
+
+app.listen(80);
 
 // Connect to mongo mlabs
 mongo.connect('mongodb://test123:test123@ds147890.mlab.com:47890/mongochat', function(err, db){
